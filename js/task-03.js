@@ -17,4 +17,4 @@ const list = document.querySelector(".gallery");
 const markup = images
   .map(({ url, alt }) => `<li><img width="400" src="${url}" alt="${alt}"></li>`)
   .join("");
-list.innerHTML = markup; //Чому не insertAdj
+list.insertAdjacentHTML("afterbegin", markup);
